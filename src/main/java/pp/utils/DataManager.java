@@ -11,7 +11,7 @@
 
 package main.java.pp.utils;
 
-import com.google.gson.Gson;
+import com.google.gson.Gson;            // Nao devemos usar apis da google, apenas simple api.
 import com.google.gson.GsonBuilder;
 
 import java.io.*;
