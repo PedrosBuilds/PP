@@ -21,7 +21,7 @@ public class DataManager {
     private static final String FILE_NAME = "data.json";
     private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public static <T> void writeData(T data) {
+    public static <T> void writeData(T data) {                    // <T> so é dado em ED.
         try (FileWriter writer = new FileWriter(FILE_NAME)) {
             gson.toJson(data, writer);
         } catch (IOException e) {
